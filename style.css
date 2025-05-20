@@ -65,20 +65,25 @@ body {
 
 .vault-glow-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 620px; /* upgraded from 480px */
-  height: 620px;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 0;
+  overflow: hidden;
 }
 
 .vault-glow {
-  width: 100%;
-  height: 100%;
-  opacity: 0.12; /* slightly stronger visibility */
-  filter: drop-shadow(0 0 90px #00ffe1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  height: auto;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
   pointer-events: none;
+  filter: drop-shadow(0 0 120px #00ffe1);
   animation: glowPulse 5s ease-in-out infinite;
 }
 
