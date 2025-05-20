@@ -1,4 +1,4 @@
-/* style.css - v3.6 Hero Banner Image Fix Edition */
+/* style.css - v3.7 Hero Clarity Edition */
 
 /* Global Styles */
 html {
@@ -56,8 +56,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to bottom, #0e0e0e 0%, #121212 100%),
-              url('assets/NeuroVault.png') no-repeat center center;
+  background: url('assets/NeuroVault.png') no-repeat center center;
   background-size: cover;
   text-align: center;
   padding: 120px 20px 100px;
@@ -66,13 +65,7 @@ body {
   min-height: 100vh;
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 0;
-}
-
+/* Removed overlay — pure banner clarity */
 .hero h1 {
   font-size: 3.5rem;
   margin: 0;
