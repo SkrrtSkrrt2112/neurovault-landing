@@ -1,4 +1,4 @@
-/* style.css - v3.2 Full Hero Background Sync Edition */
+/* style.css - v3.6 Hero Banner Image Fix Edition */
 
 /* Global Styles */
 html {
@@ -63,6 +63,7 @@ body {
   padding: 120px 20px 100px;
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .hero-overlay {
