@@ -1,4 +1,4 @@
-/* style.css - v3.1 Hero Glow Upgrade + Vault Pulse Edition */
+/* style.css - v3.2 Full Hero Background Sync Edition */
 
 /* Global Styles */
 html {
@@ -56,50 +56,20 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to bottom, #0e0e0e 0%, #121212 100%);
+  background: linear-gradient(to bottom, #0e0e0e 0%, #121212 100%),
+              url('assets/NeuroVault.png') no-repeat center center;
+  background-size: cover;
   text-align: center;
   padding: 120px 20px 100px;
   position: relative;
   overflow: hidden;
 }
 
-.vault-glow-container {
+.hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
   z-index: 0;
-  overflow: hidden;
-}
-
-.vault-glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1200px;
-  height: auto;
-  max-width: none;
-  transform: translate(-50%, -50%);
-  opacity: 0.1;
-  pointer-events: none;
-  filter: drop-shadow(0 0 120px #00ffe1);
-  animation: glowPulse 5s ease-in-out infinite;
-}
-
-@keyframes glowPulse {
-  0% { opacity: 0.12; transform: scale(1); }
-  50% { opacity: 0.18; transform: scale(1.025); }
-  100% { opacity: 0.12; transform: scale(1); }
-}
-
-.logo {
-  width: 90px;
-  height: auto;
-  margin: 0 auto 20px auto;
-  display: block;
-  z-index: 1;
-  position: relative;
 }
 
 .hero h1 {
