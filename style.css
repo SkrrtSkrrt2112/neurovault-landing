@@ -1,4 +1,4 @@
-/* style.css - v3.0 NeuroVault Web Edition */
+/* style.css - v3.1 Hero Glow Upgrade + Vault Pulse Edition */
 
 /* Global Styles */
 html {
@@ -67,8 +67,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 480px;
-  height: 480px;
+  width: 620px; /* upgraded from 480px */
+  height: 620px;
   transform: translate(-50%, -50%);
   z-index: 0;
 }
@@ -76,9 +76,16 @@ body {
 .vault-glow {
   width: 100%;
   height: 100%;
-  opacity: 0.08;
-  filter: drop-shadow(0 0 80px #00ffe1);
+  opacity: 0.12; /* slightly stronger visibility */
+  filter: drop-shadow(0 0 90px #00ffe1);
   pointer-events: none;
+  animation: glowPulse 5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% { opacity: 0.12; transform: scale(1); }
+  50% { opacity: 0.18; transform: scale(1.025); }
+  100% { opacity: 0.12; transform: scale(1); }
 }
 
 .logo {
