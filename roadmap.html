@@ -1,4 +1,4 @@
-<!-- roadmap.html - v2.0 ClickZoom Precision Edition -->
+<!-- roadmap.html - v2.1 True Scale Lock Edition -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,7 +64,7 @@
 
     .roadmap-footer h3 {
       font-size: 1.8rem;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       color: #f1f1f1;
     }
 
@@ -88,12 +88,12 @@
     }
 
     .test-preview img {
-      width: 78%;
-      max-width: 1100px;
+      width: 72%;
+      max-width: 1000px;
       border-radius: 6px;
-      image-rendering: crisp-edges;
       cursor: zoom-in;
       transition: all 0.2s ease-in-out;
+      image-rendering: crisp-edges;
     }
 
     .lightbox {
@@ -113,7 +113,6 @@
       max-height: 95vh;
       border-radius: 8px;
       cursor: zoom-out;
-      image-rendering: auto;
     }
 
     .lightbox:target {
@@ -179,8 +178,8 @@
       </p>
 
       <div class="test-preview-container">
-        <a href="#lightbox1"><img src="assets/testratios.png" alt="Previous Compression Test"></a>
-        <a href="#lightbox2"><img src="assets/newtestratios.png" alt="Latest Compression Test"></a>
+        <a href="#lightbox1" class="test-preview"><img src="assets/testratios.png" alt="Previous Compression Test"></a>
+        <a href="#lightbox2" class="test-preview"><img src="assets/newtestratios.png" alt="Latest Compression Test"></a>
       </div>
 
       <div id="lightbox1" class="lightbox">
