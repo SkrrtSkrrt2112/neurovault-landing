@@ -1,4 +1,4 @@
-<!-- roadmap.html - v1.9 Elite Visual Clarity Edition -->
+<!-- roadmap.html - v2.0 ClickZoom Precision Edition -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,7 +64,7 @@
 
     .roadmap-footer h3 {
       font-size: 1.8rem;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       color: #f1f1f1;
     }
 
@@ -89,12 +89,11 @@
 
     .test-preview img {
       width: 78%;
-      max-width: 1200px;
-      height: auto;
+      max-width: 1100px;
       border-radius: 6px;
       image-rendering: crisp-edges;
       cursor: zoom-in;
-      transition: transform 0.2s ease;
+      transition: all 0.2s ease-in-out;
     }
 
     .lightbox {
@@ -103,17 +102,18 @@
       top: 0; left: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(0, 0, 0, 0.95);
+      background: rgba(0, 0, 0, 0.96);
       justify-content: center;
       align-items: center;
-      z-index: 9999;
+      z-index: 10000;
     }
 
     .lightbox img {
       max-width: 95vw;
       max-height: 95vh;
-      border-radius: 10px;
+      border-radius: 8px;
       cursor: zoom-out;
+      image-rendering: auto;
     }
 
     .lightbox:target {
@@ -151,7 +151,6 @@
           <li>Adaptive multi-layer optimization model</li>
         </ul>
       </div>
-
       <div class="roadmap-column">
         <h3>Mid-Term</h3>
         <ul>
@@ -161,7 +160,6 @@
           <li>Training feedback for embedded logic modules</li>
         </ul>
       </div>
-
       <div class="roadmap-column">
         <h3>Long-Term</h3>
         <ul>
@@ -181,21 +179,18 @@
       </p>
 
       <div class="test-preview-container">
-        <a href="#lightbox1"><img src="assets/testratios.png" alt="Previous Compression Test" /></a>
-        <a href="#lightbox2"><img src="assets/newtestratios.png" alt="Latest Compression Test" /></a>
+        <a href="#lightbox1"><img src="assets/testratios.png" alt="Previous Compression Test"></a>
+        <a href="#lightbox2"><img src="assets/newtestratios.png" alt="Latest Compression Test"></a>
       </div>
 
-      <!-- Lightboxes -->
       <div id="lightbox1" class="lightbox">
-        <a href="#"><img src="assets/testratios.png" alt="Previous Compression Test Enlarged" /></a>
+        <a href="#"><img src="assets/testratios.png" alt="Zoomed Test 1"></a>
       </div>
       <div id="lightbox2" class="lightbox">
-        <a href="#"><img src="assets/newtestratios.png" alt="Latest Compression Test Enlarged" /></a>
+        <a href="#"><img src="assets/newtestratios.png" alt="Zoomed Test 2"></a>
       </div>
 
-      <p style="margin-top: 40px;">
-        🧠 Compression results: evolving fast. NeuroVault learns. Vaults adapt.
-      </p>
+      <p style="margin-top: 40px;">🧠 Compression results: evolving fast. NeuroVault learns. Vaults adapt.</p>
     </div>
   </section>
 
