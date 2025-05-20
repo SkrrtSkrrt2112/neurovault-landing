@@ -1,4 +1,4 @@
-<!-- roadmap.html - v1.5 Wideband Reveal Edition -->
+<!-- roadmap.html - v1.6 Balanced Reveal Edition -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +9,9 @@
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <style>
     .roadmap-section {
-      width: 100%;
-      max-width: none;
-      padding: 0 40px;
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 0 20px;
       text-align: center;
     }
 
@@ -57,24 +57,31 @@
       font-size: 0.95rem;
     }
 
-    .roadmap-footer {
-      margin-top: 80px;
+    .compression-results {
+      max-width: 1200px;
+      width: 90%;
+      margin: 60px auto 0;
       text-align: center;
     }
 
-    .roadmap-footer img {
-      max-width: 1200px;
-      width: 80%;
-      opacity: 1;
-      margin: 0 auto;
+    .compression-results img {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 20px;
       display: block;
       pointer-events: none;
     }
 
-    .roadmap-footer p {
-      margin-top: 20px;
+    .compression-results p {
       font-size: 0.95rem;
       color: #aaa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
@@ -129,14 +136,12 @@
         </ul>
       </div>
     </div>
+  </section>
 
-    <div class="roadmap-footer">
-      <div style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
-        <img src="assets/testratios.png" alt="Previous Compression Test" />
-        <img src="assets/newtestratios.png" alt="Latest Compression Test" />
-      </div>
-      <p style="margin-top: 20px;">🧠 Compression results: evolving fast. NeuroVault learns. Vaults adapt.</p>
-    </div>
+  <section class="compression-results">
+    <img src="assets/testratios.png" alt="Previous Compression Test" />
+    <img src="assets/newtestratios.png" alt="Latest Compression Test" />
+    <p>🧠 Compression results: evolving fast. NeuroVault learns. Vaults adapt.</p>
   </section>
 
   <footer>
