@@ -1,4 +1,4 @@
-<!-- roadmap.html - v1.6 Balanced Reveal Edition -->
+<!-- roadmap.html - v1.5 Compression Test Clarity Edition -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,31 +57,24 @@
       font-size: 0.95rem;
     }
 
-    .compression-results {
-      max-width: 1200px;
-      width: 90%;
-      margin: 60px auto 0;
+    .roadmap-footer {
+      margin-top: 80px;
       text-align: center;
     }
 
-    .compression-results img {
-      max-width: 100%;
-      width: 100%;
-      margin-bottom: 20px;
+    .roadmap-footer img {
+      max-width: 1000px;
+      width: 75%;
+      opacity: 1;
+      margin: 0 auto;
       display: block;
       pointer-events: none;
     }
 
-    .compression-results p {
+    .roadmap-footer p {
+      margin-top: 20px;
       font-size: 0.95rem;
       color: #aaa;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #888;
     }
   </style>
 </head>
@@ -136,12 +129,14 @@
         </ul>
       </div>
     </div>
-  </section>
 
-  <section class="compression-results">
-    <img src="assets/testratios.png" alt="Previous Compression Test" />
-    <img src="assets/newtestratios.png" alt="Latest Compression Test" />
-    <p>🧠 Compression results: evolving fast. NeuroVault learns. Vaults adapt.</p>
+    <div class="roadmap-footer">
+      <div style="display: flex; flex-direction: column; gap: 25px; align-items: center;">
+        <img src="assets/testratios.png" alt="Previous Compression Test" style="max-width: 1000px; width: 75%; opacity: 1;" />
+        <img src="assets/newtestratios.png" alt="Latest Compression Test" style="max-width: 1000px; width: 75%; opacity: 1;" />
+      </div>
+      <p>🧠 Compression results: evolving fast. NeuroVault learns. Vaults adapt.</p>
+    </div>
   </section>
 
   <footer>
