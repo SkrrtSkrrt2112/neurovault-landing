@@ -1,97 +1,37 @@
-/* Global Styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0e0e0e;
-  color: #f1f1f1;
-  line-height: 1.6;
-}
+<!-- index.html - v3.5 Quantum Launchplate Edition -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuroVault Technologies Ltd</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
 
-/* Logo Styling */
-.logo {
-  width: 80px;
-  height: auto;
-  border-radius: 10px;
-  margin: 0 auto 20px auto;
-  display: block;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-}
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">NeuroVault</a>
+      <ul class="nav-links">
+        <li><a href="features.html">What It Does</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  padding: 100px 20px;
-  text-align: center;
-}
+  <section class="hero">
+    <div class="vault-glow-container">
+      <img src="assets/vault_circle_crop.png" alt="Vault Pulse" class="vault-glow" />
+    </div>
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
+    <img src="assets/NeuroVault.png" alt="NeuroVault Logo" class="logo" />
+    <h1>NeuroVault</h1>
+    <p class="tagline">Compression Intelligence for a Self-Evolving Mind.</p>
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
+    <a href="mailto:access@neurovaulttech.com" class="cta">Join the Waitlist</a>
+  </section>
 
-/* CTA Button */
-.cta {
-  background-color: #00ffe1;
-  color: #000;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta:hover {
-  background-color: #00c4a9;
-}
-
-/* Content Sections */
-.about, .roadmap, .cta-section {
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.about ul, .roadmap ol {
-  padding-left: 1.2rem;
-}
-
-.about li, .roadmap li {
-  margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #888;
-}
-/* CTA Vault Glow Background */
-.cta-wrapper {
-  position: relative;
-  display: inline-block;
-  margin-top: 30px;
-}
-
-.cta-bg-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 180px;
-  height: 180px;
-  transform: translate(-50%, -50%);
-  opacity: 0.12;
-  pointer-events: none;
-  filter: drop-shadow(0 0 12px #00ffe1);
-  z-index: 0;
-}
-
-.cta-wrapper .cta {
-  position: relative;
-  z-index: 1;
-}
+</body>
+</html>
